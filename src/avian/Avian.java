@@ -1,3 +1,5 @@
+package avian;
+
 /**
  * The bird people
  */
@@ -24,12 +26,12 @@ public abstract class Avian extends ZooResident{
     }
 
     /**
-     * Returns information of the Avian
-     * @return information of the Avian
+     * Returns information of the Avian.Avian
+     * @return information of the Avian.Avian
      */
     @Override
     public String toString() {
-        return "ZooResident{" +
+        return "Avian.ZooResident{" +
                 "age=" + super.getAge() +
                 ", color='" + super.getColor() + '\'' +
                 ", weight=" + super.getWeight() +

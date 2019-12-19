@@ -1,5 +1,7 @@
+package avian;
+
 /**
- * Creates a Pigeon (Avian-class) creature
+ * Creates a Avian.Pigeon (Avian.Avian-class) creature
  */
 public class Pigeon extends Avian {
 
@@ -24,12 +26,12 @@ public class Pigeon extends Avian {
     }
 
     /**
-     * Returns information about Pigeon
-     * @return information about Pigeon
+     * Returns information about Avian.Pigeon
+     * @return information about Avian.Pigeon
      */
     @Override
     public String toString() {
-        return "Pigeon{" +
+        return "Avian.Pigeon{" +
                 "age=" + super.getAge() +
                 ", color='" + super.getColor() + '\'' +
                 ", weight=" + super.getWeight() +
@@ -41,7 +43,7 @@ public class Pigeon extends Avian {
     }
 
     /**
-     * Entry point for Pigeon
+     * Entry point for Avian.Pigeon
      * @param args
      */
     public static void main(String[] args) {
