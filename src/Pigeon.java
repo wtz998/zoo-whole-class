@@ -16,6 +16,11 @@ public class Pigeon extends Avian {
      */
     public Pigeon(int age, String color, double weight, boolean endangered, boolean sleeping, double speed, boolean canFly) {
         super(age, color, weight, endangered, sleeping, speed, canFly);
+        System.out.println(toString());
+        System.out.println(super.sleep());
+        System.out.println(super.wakeUp());
+        System.out.println(super.sleep());
+
     }
 
     /**
@@ -24,7 +29,7 @@ public class Pigeon extends Avian {
      */
     @Override
     public String toString() {
-        return "ZooResident{" +
+        return "Pigeon{" +
                 "age=" + super.getAge() +
                 ", color='" + super.getColor() + '\'' +
                 ", weight=" + super.getWeight() +
