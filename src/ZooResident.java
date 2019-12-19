@@ -25,7 +25,7 @@ public abstract class ZooResident {
     }
 
     /**
-     * returns the age of the resizent
+     * returns the age of the resident
      * @return the age
      */
     public int getAge() {
