@@ -4,6 +4,7 @@
 public abstract class Avian extends ZooResident{
     private double speed;
     private boolean canFly;
+    private boolean inFlight;
 
     /**
      * Parameters for an avian creature
@@ -40,6 +41,18 @@ public abstract class Avian extends ZooResident{
     }
 
     /**
+     * Lets the bird fly
+     * @return if the bird starts flying
+     */
+    public String fly(){
+        if(canFly = true){
+            inFlight = true;
+            return "I'm flying!";
+        }
+        return "I tried to fly but I'm too heavy";
+    }
+
+    /**
      * Returns speed of the resident
      * @return The speed
      */
@@ -61,6 +74,14 @@ public abstract class Avian extends ZooResident{
      */
     public boolean isCanFly() {
         return canFly;
+    }
+
+    /**
+     * Returns if the creature is flying
+     * @return If the creature is flying
+     */
+    public boolean isInFlight() {
+        return inFlight;
     }
 
     /**
