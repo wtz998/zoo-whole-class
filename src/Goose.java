@@ -1,5 +1,3 @@
-
-
 public class Goose extends Avian {
     /**
      * builds a zoo resident
@@ -17,3 +15,25 @@ public class Goose extends Avian {
         super(10, "white", 2, false, true, 40, true,true);
     }
 }
+    /**
+     * Animal is eating
+     * @return
+     */
+    public String eat(){
+        return "corn"
+    }
+    /**
+     * How the animal moves
+     * @return
+     */
+    public String move(){
+        return "Fly"
+    }
+
+    /**
+     * The animal doing something
+     * @return
+     */
+    public String doSomething(){
+        return "honk"
+    }
