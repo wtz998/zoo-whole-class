@@ -24,6 +24,24 @@ public abstract class ZooResident {
         this.sleeping = sleeping;
     }
 
+     /**
+     * Animal is eating
+     * @return
+     */
+    public abstract String eat();
+
+    /**
+     * How the animal moves
+     * @return
+     */
+    public abstract String move();
+
+    /**
+     * The animal doing something
+     * @return
+     */
+    public abstract String doSomething();
+    
     /**
      * returns the age of the resident
      * @return the age
