@@ -25,7 +25,25 @@ public abstract class ZooResident {
     }
 
     /**
-     * returns the age of the resident
+     * Animal is eating
+     * @return
+     */
+    public abstract String eat();
+
+    /**
+     * How the animal moves
+     * @return
+     */
+    public abstract String move();
+
+    /**
+     * The animal doing something
+     * @return
+     */
+    public abstract String doSomething();
+
+    /**
+     * returns the age of the resizent
      * @return the age
      */
     public int getAge() {
@@ -69,6 +87,7 @@ public abstract class ZooResident {
      * @return the status of sleeping
      */
     public String sleep() {
+        sleeping = true;
         return sleeping
                 ? "I'm already asleep"
                 : "zzzzzzzzzzzzzzzzz";
@@ -79,6 +98,7 @@ public abstract class ZooResident {
      * @return the wake status
      */
     public String wakeUp(){
+        sleeping = false;
         return sleeping
                 ? "I'm awake!"
                 : "I wasn't sleeping";
