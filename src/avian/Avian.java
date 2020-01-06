@@ -1,10 +1,12 @@
+package avian;
+
 /**
  * The bird people
  */
 public abstract class Avian extends ZooResident{
     private double speed;
-    private double legs = 2;
     private boolean canFly;
+    private boolean inFlight;
 
     /**
      * Parameters for an avian creature
@@ -19,6 +21,37 @@ public abstract class Avian extends ZooResident{
      */
     public Avian(int age, String color, double weight, boolean endangered, boolean sleeping, double speed, boolean canFly) {
         super(age, color, weight, endangered, sleeping);
+        this.speed = speed;
+        this.canFly = canFly;
+    }
+
+    /**
+     * Returns information of the Avian.Avian
+     * @return information of the Avian.Avian
+     */
+    @Override
+    public String toString() {
+        return "Avian.ZooResident{" +
+                "age=" + super.getAge() +
+                ", color='" + super.getColor() + '\'' +
+                ", weight=" + super.getWeight() +
+                ", endangered=" + super.isEndangered() +
+                ", sleeping=" + super.isSleeping() +
+                ", speed=" + speed +
+                ", canFly=" + canFly +
+                '}';
+    }
+
+    /**
+     * Lets the bird fly
+     * @return if the bird starts flying
+     */
+    public String fly(){
+        if(canFly = true){
+            inFlight = true;
+            return "I'm flying!";
+        }
+        return "I tried to fly but I'm too heavy";
     }
 
     /**
@@ -43,6 +76,14 @@ public abstract class Avian extends ZooResident{
      */
     public boolean isCanFly() {
         return canFly;
+    }
+
+    /**
+     * Returns if the creature is flying
+     * @return If the creature is flying
+     */
+    public boolean isInFlight() {
+        return inFlight;
     }
 
     /**
