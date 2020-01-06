@@ -1,4 +1,3 @@
-
 public class Duck extends Avian {
     /**
      * builds a zoo resident
@@ -12,6 +11,30 @@ public class Duck extends Avian {
      * @param canFly     can resident fly
      */
     public Duck(int age, String color, double weight, boolean endangered, boolean sleeping, double speed, boolean canFly) {
-        super(2, "brown and grey", 5, true, false,5, true, false);
+        super(2, "brown and grey", 5, true, false,5, true);
+    }
+    
+     /**
+     * Animal is eating
+     * @return bread
+     */
+    public String eat() {
+        return "bread";    
+    }
+
+    /**
+     * How the animal moves
+     * @return swimming
+     */
+    public String move {
+        return "swimming";    
+    }
+
+    /**
+     * The animal doing something
+     * @return pooping
+     */
+    public String doSomething {
+        return "pooping";    
     }
 }
