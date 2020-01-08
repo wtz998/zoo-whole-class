@@ -10,11 +10,32 @@ public class Seagull extends Avian {
      * @param endangered is the resident endangered
      * @param sleeping   is the resident sleeping
      */
-    public Seagull(int age, String color, double weight, boolean endangered, boolean sleeping, double speed, boolean canFly, boolean inFlight) {
-        super(age, color, weight, endangered, sleeping, speed, canFly, inFlight);
-        
+    public Seagull(int age, String color, double weight, boolean endangered, boolean sleeping, double speed, double legs, boolean canFly, boolean inFlight) {
+        super(10, "white and grey", 5, false, false, 40, true, true);
+    }
+}
+    /**
+     * Animal is eating
+     * @return
+     */
+    public String eat(){
+        return "Your Food"
+    }
+    /**
+     * How the animal moves
+     * @return
+     */
+    public String move(){
+        return "Fly"
     }
 
+    /**
+     * The animal doing something
+     * @return
+     */
+    public String doSomething(){
+        return "arial assault"
+    }
 
 
 }
